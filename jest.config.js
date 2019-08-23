@@ -8,7 +8,7 @@ module.exports = {
   moduleDirectories: ['<rootDir>/node_modules', '<rootDir>/src'],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   moduleNameMapper: {
-    "\\.(css|less|scss)$": "identity-obj-proxy"
+    "\\.(css|less|scss)$": "<rootDir>/__mocks__/styles.js"
   },
-  setupFilesAfterEnv: ["./src/tests/setup.ts"]
+  setupFilesAfterEnv: ["<rootDir>/__tests__/setup.js"]
 }
